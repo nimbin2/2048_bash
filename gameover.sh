@@ -88,7 +88,6 @@ setHighscore() {
 	acHighestNum=1
 	printMatrix
         for ((setC=0;setC<3;setC++)); do
-                #setC=$((setC+1))
                 if [ $breakSet = true ]; then
                         if [[ "$newScore" -gt "${scores[$setC]}" ]]; then
                                 if $autorun; then pName="autorun"; echo $pName;  else

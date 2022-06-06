@@ -10,9 +10,6 @@ source autorun.sh
 rm log.log
 clear -x
 
-#_STTY=$(stty -g)      # Save current terminal setup
-#printf "\e[?25l"      # Turn of cursor
-#stty -echo -icanon
 
 
 function at_exit() {
@@ -52,7 +49,6 @@ while true; do
 # swipe to direction X
 	swipeX
 # set Random num matrix
-	#if $setNewRanN; then setRanN && wait; fi
 	if ${swipeState[$swipeValue]}; then setRanN; fi
 # write matrix
 	logMatrix

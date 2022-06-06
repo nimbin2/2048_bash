@@ -144,20 +144,12 @@ fillScore() {
 blackScreen() {
 	for ((i = 0 ; i <= MH ; i++)); do
 		printf "\e[37;40m%$((MW))s\e[0m" |tr " " " "
-		#for ((c = 0 ; c <= MW ; c++)); do
-			#printf "\e[37;40m\e[%s;%s\nf \e[0m" "$i" "$c"
-		#done
 	done
 
 }
 
 startRun() {
 	matrix=(0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-	#matrix=(4 0 0 0 8 0 0 0 128 0 0 0 2 0 0 0)
-	#matrix=(8 2 0 0 4 0 0 0 4 0 0 0 0 0 0 0)
-	#matrix=(16 2 0 0 8 2 0 0 0 128 0 0 0 0 16 16)
-	#matrix=(2110 0 64 16 16 256 32 0 0 1281 0 16 3 5 2 8)
-	#matrix=(3 7 16 128 0 4 32 0 9 4 16 512 0 4 8 128)
 	mainLoop=0
 	blackScreen
 	printStart
