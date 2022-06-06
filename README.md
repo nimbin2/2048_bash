@@ -1,3 +1,3 @@
 # 2048_bash
-<p>Controlled with swipe or arrow keys</p>
-<p>Has a bad implementation of an autorun function...</p>
+<p>Controlled with arrows, or</p>
+<p>make use of my bad implementation of an autorun function...</p>
